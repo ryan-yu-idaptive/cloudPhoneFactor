@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Gather action="http://neiodev.serveo.net/security/TwilioPhoneChallengeCompleted" timeout="45" finishOnKey="#">
+        <Say voice="woman">This is Centrify's Multifactor authentication. Please press any key followed by pound sign to complete your authentication</Say>
+    </Gather>
+    <!-- Will only come here after timeout expires -->
+    <Say voice="woman">We didn't receive any input. Goodbye!</Say>
+    <Hangup/>
+</Response>
